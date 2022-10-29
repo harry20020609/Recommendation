@@ -52,7 +52,7 @@ class Recommend:
         if dotProduct == 0:
             cosSim = 0
         else:
-            cosSim = dotProduct / sqrt(I_a_ms) * sqrt(U_a_ms)
+            cosSim = dotProduct / (sqrt(I_a_ms) * sqrt(U_a_ms))
         return cosSim
 
     def predict(self, n=2):
